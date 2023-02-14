@@ -6,8 +6,13 @@
       apt:
        name: git 
        state: present
-    - name: i want to install tree
-      apt:
+    # - name: i want to install tree
+    #   apt:
+    #    name: tree
+    #    state: present  
+    - name: apt update && apt install tree -y
+     apt:
+       update_cache: yes
        name: tree
-       state: present   
+       state: present    
        
