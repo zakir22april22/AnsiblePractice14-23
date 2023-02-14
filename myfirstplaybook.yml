@@ -1,8 +1,9 @@
 ---
-- hosts: all
-  becomes: yes
-  tasks:
-   - name: i want to install git 
-     apt:
-      name: git 
-      state: present
+ - hosts: all
+   becomes: yes
+   tasks:
+    - name: i want to install git 
+      apt:
+       name: git 
+       state: present
+       
