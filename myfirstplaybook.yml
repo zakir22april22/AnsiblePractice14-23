@@ -1,6 +1,6 @@
 ---
- - hosts: all
-   becomes: yes
+ - hosts: mywebservers
+   become: yes
    tasks:
     - name: i want to install git 
       apt:
