@@ -1,2 +1,5 @@
 [mywebservers]
 172.31.37.217
+
+[myapplicationservers]
+172.31.37.217
