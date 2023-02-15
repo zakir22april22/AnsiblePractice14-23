@@ -6,10 +6,8 @@
       apt:
        name: git 
        state: present
-    # - name: i want to install tree
-    #   apt:
-    #    name: tree
-    #    state: present  
+      when: ansible_os_family =="Debian"
+  
     - name: apt update && apt install tree -y
       apt:
        update_cache: yes
